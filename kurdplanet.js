@@ -1,4 +1,3 @@
-// زیادکردنی ستایلەکان بە شێوەی ئۆتۆماتیکی بۆ پەڕەکە
 const style = document.createElement('style');
 style.textContent = `
     .box { display: inline-flex; align-items: center; justify-content: center; background: rgba(76, 75, 75, 1.00); color: white; padding: 8px 25px; margin: 5px; border-radius: 4px; font-size: 45px; cursor: pointer; white-space: nowrap; border: none; }
@@ -9,12 +8,10 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// پێناسەکردنی my-button
 customElements.define('my-button', class extends HTMLElement {
     connectedCallback() { this.className = 'box'; }
 });
 
-// پێناسەکردنی my-search
 customElements.define('my-search', class extends HTMLElement {
     connectedCallback() {
         this.className = 'box';
